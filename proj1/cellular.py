@@ -133,12 +133,14 @@ def update_method(three_bits_state, rule):
 if __name__ == '__main__':
     # START OF YOUR CODE
     # Parse command line arguments
+    
     parser = argparse.ArgumentParser(description="Project 1: Cellular Automation")
     parser.add_argument('rule', type=int, help='The rule of cellular automation')
     parser.add_argument('steps', type=int, help='The steps of playing')
     args = parser.parse_args()
     rule = args.rule
     steps = args.steps
+    
     # END OF YOUR CODE
 
     assert 0 <= rule <= 255 and steps >= 0
